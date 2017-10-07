@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-6 9:56:31 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.tax.nswf.entity.User" table="USER">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="dept" type="java.lang.String">
+            <column name="DEPT" />
+        </property>
+        <property name="account" type="java.lang.String">
+            <column name="ACCOUNT" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="headImg" type="java.lang.String">
+            <column name="HEADIMG" />
+        </property>
+        <property name="gender" type="java.lang.Boolean">
+            <column name="GENDER" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="MEMO" />
+        </property>
+    </class>
+</hibernate-mapping>
